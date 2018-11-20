@@ -1,11 +1,12 @@
 import * as Kafka from 'node-rdkafka';
 
+const broker =  "YOUR_BROKER"
 const username = "SASL_SSL_YOUR_USERNAME"
 const password = "SASL_SSL_YOUR_PASSWORD"
 
 const consumer = new Kafka.KafkaConsumer({
     'debug': "all",
-    'metadata.broker.list': 'felix-event-hubs.servicebus.windows.net:9093',
+    'metadata.broker.list': broker,
     'group.id': '$Default',
     'enable.auto.commit': false,
     'security.protocol': 'SASL_SSL',

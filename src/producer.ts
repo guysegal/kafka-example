@@ -1,13 +1,13 @@
 import * as Kafka from 'node-rdkafka';
 
-const broker =  "YOUR_BROKER"
-const username = "SASL_SSL_YOUR_USERNAME"
-const password = "SASL_SSL_YOUR_PASSWORD"
+const brokerHost =  "BROKER_HOST"
+const username = "USERNAME"
+const password = "PASSWORD"
 
 var producer = new Kafka.Producer(
     {
         'debug': "all",
-        'metadata.broker.list': broker,
+        'metadata.broker.list': brokerHost,
         'security.protocol': 'SASL_SSL',
         'sasl.mechanisms': 'PLAIN',
         'sasl.username': username,

@@ -1,0 +1,9 @@
+team: team-timely-response
+nameOverride: qualified-experts-publisher
+loggingLevel: info
+config:
+
+service:
+    internalPort: 3000
+    annotations:
+        prometheus.io/scrape: 'true'

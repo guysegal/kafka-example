@@ -1,0 +1,12 @@
+{
+    "preset": "ts-jest/presets/js-with-ts",
+    "globals": {
+        "ts-jest": {
+            "tsConfig": "<rootDir>/tsconfig.json"
+        }
+    },
+    "moduleNameMapper": {
+        "^@src/(.*)$": "<rootDir>/src/$1"
+    },
+    "testMatch": ["<rootDir>/tests/unit/*.+(js)"]
+}
